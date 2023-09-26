@@ -1,0 +1,26 @@
+{
+  "name": "expensify",
+  "version": "1.0.0",
+  "description": "Expense Management System",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run dev --prefix client",
+    "prod": "concurrently \"npm start\" \"npm run client\" "
+  },
+  "keywords": [],
+  "author": "mpatwa98",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "mongoose": "^7.3.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  }
+}
